@@ -11,9 +11,9 @@ class NLP {
         this.prefix  = prefix;
 		this.baseURL = `https://language.googleapis.com/${this.prefix}`
 
-		if (apiKey) 				 this.apiKey = apiKey
-        else if (process.env.apiKey) this.apiKey = process.env.apiKey
-        else 						 throw Error( `The parameter 'apiKey' is required` )
+		if (apiKey) this.apiKey = apiKey
+        else if (process.env.GOOGLE_API_KEY) this.apiKey = process.env.GOOGLE_API_KEY
+        else throw Error( `The parameter 'apiKey' is required` )
     }
 
     analyzeEntities(text, type='PLAIN_TEXT', encodingType='UTF8') {
@@ -45,7 +45,6 @@ class NLP {
 			extractDocumentSentiment: _features.sentiment
 		}
 		let opts 	 = this.makeOpts(text, type, encodingType, features)
-
         return this.fetch( url, opts )
     }
 

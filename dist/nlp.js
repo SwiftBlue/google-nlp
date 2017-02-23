@@ -38,7 +38,7 @@ var NLP = function () {
 		this.prefix = prefix;
 		this.baseURL = 'https://language.googleapis.com/' + this.prefix;
 
-		if (apiKey) this.apiKey = apiKey;else if (_process2.default.env.apiKey) this.apiKey = _process2.default.env.apiKey;else throw Error('The parameter \'apiKey\' is required');
+		if (apiKey) this.apiKey = apiKey;else if (_process2.default.env.GOOGLE_API_KEY) this.apiKey = _process2.default.env.GOOGLE_API_KEY;else throw Error('The parameter \'apiKey\' is required');
 	}
 
 	_createClass(NLP, [{
@@ -89,7 +89,6 @@ var NLP = function () {
 				extractDocumentSentiment: _features.sentiment
 			};
 			var opts = this.makeOpts(text, type, encodingType, features);
-
 			return this.fetch(url, opts);
 		}
 	}, {
