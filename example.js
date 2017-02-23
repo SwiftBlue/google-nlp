@@ -1,14 +1,15 @@
 //	Import this module
-const NLP    = require('google-nlp')
+const NLP = require('google-nlp')
 
 //	Google Cloud API key
 const apiKey = 'ABCDEFGHHIJKLMNOPQRSTUVWXYZ'
 
 // 	Text to send to Google NLP
-let text     = 'The quick brown fox jumps over the lazy dog'
+let text = 'The quick brown fox jumps over the lazy dog'
 
 // 	Instantiate he NLP class with your Google Cloud API key
-let nlp      = new NLP( apiKey )
+let nlp = new NLP( apiKey )
+
 
 /**
  *  Analyze entities from the text string
@@ -24,6 +25,7 @@ nlp.analyzeEntities( text )
 		console.log( 'Error:', error.message );
 	})
 
+
 /**
  *  Analyze sentiment from the text string
  */
@@ -36,6 +38,7 @@ nlp.analyzeSentiment( text )
 		console.log( 'Error:', error.message );
 	})
 
+
 /**
  *  Analyze syntax from the text string
  */
@@ -47,6 +50,7 @@ nlp.analyzeSyntax( text )
 	.catch(function( error ) {
 		console.log( 'Error:', error.message );
 	})
+
 
 /**
  *  Analyze syntax from the text string

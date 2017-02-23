@@ -1,6 +1,6 @@
 {
 	"name":        "google-nlp",
-	"version":     "0.5.0",
+	"version":     "0.5.1",
 	"description": "Simple Google Cloud Natural Language Processing API wrapper that uses promises.",
 	"main":        "dist/nlp.js",
 	"author":      "SwiftBlue <hello@swiftblue.com>",
@@ -10,6 +10,10 @@
 		"transpile": "babel --presets es2015 src --out-dir dist",
 		"clean":     "rm -rf dist/",
 		"build":     "npm run clean && npm run transpile"
+	},
+	"repository": {
+		"type": "git",
+		"url":  "https://github.com/swiftblue/google-nlp.git"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.23.0",
