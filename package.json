@@ -10,7 +10,7 @@
 		"transpile": "babel --presets es2015 src --out-dir dist",
 		"clean": "rm -rf dist/",
 		"build": "npm run clean && npm run transpile && npm test",
-		"test": "mocha"
+		"test": "mocha --ui=bdd --reporter=spec"
 	},
 	"bugs": {
 		"url": "https://github.com/swiftblue/google-nlp/issues"
