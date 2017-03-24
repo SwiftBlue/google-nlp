@@ -5,7 +5,7 @@
 ## Google NLP API Wrapper
 
 <div style="display: inline-block; margin: 20px 0;">
-	<p><img src="https://api.shippable.com/projects/58ae7873b4650b0f00a92534/badge?branch=master" align="left"></p>
+	<p><img src="https://api.shippable.com/projects/58ae7873b4650b0f00a92534/badge?branch=master"></p>
 <div style="clear: both;"></div></div>
 
 Simple Google Cloud Natural Language Processing API wrapper that uses promises thanks to [Bluebird](https://github.com/petkaantonov/bluebird).
