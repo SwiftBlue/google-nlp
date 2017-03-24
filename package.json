@@ -1,6 +1,6 @@
 {
 	"name": "google-nlp",
-	"version": "0.5.3",
+	"version": "0.5.4",
 	"description": "Simple Google Cloud Natural Language Processing API wrapper that uses promises.",
 	"main": "dist/nlp.js",
 	"author": "SwiftBlue <hello@swiftblue.com>",

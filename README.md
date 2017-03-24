@@ -6,10 +6,6 @@
 
 <div style="display: inline-block; margin: 20px 0;">
 	<img src="https://api.shippable.com/projects/58ae7873b4650b0f00a92534/badge?branch=master" align="left">
-
-	&nbsp;&nbsp;&nbsp;&nbsp;
-
-	<img src="https://api.shippable.com/projects/58ae7873b4650b0f00a92534/coverageBadge?branch=master" align="right">
 <div style="clear: both;"></div></div>
 
 Simple Google Cloud Natural Language Processing API wrapper that uses promises thanks to [Bluebird](https://github.com/petkaantonov/bluebird).
